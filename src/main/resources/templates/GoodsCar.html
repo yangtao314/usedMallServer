@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>所有用户</title>
+</head>
+<body>
+<h2>所有用户信息</h2>
+
+<table>
+
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>昵称</th>
+        <th>用户名</th>
+        <th>状态 </th>
+        <th>状态 </th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="gCar : ${GoodsCar}">
+        <td th:text="${gCar.id}"></td>
+        <td th:text="${gCar.modified}"></td>
+        <td th:text="${gCar.sid}"></td>
+        <td th:text="${gCar.uid}"></td>
+        <td th:text="${gCar.quantity}"></td>
+        <td th:text="${gCar.display}"></td>
+    </tr>
+    </tbody>
+
+</table>
+</body>
+<script th:src="@{/js/jquery-3.2.1.min.js}" type="text/javascript">
+</script>
+<script>
+</script>
+</html>

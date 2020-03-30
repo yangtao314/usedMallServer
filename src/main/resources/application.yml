@@ -1,0 +1,17 @@
+# 服务端口
+server:
+  port: 8081
+
+# spring配置
+spring:
+  # 数据源
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://120.79.15.135:3306/test
+    username: test
+    password: mysql_test
+
+# mybatis 映射
+mybatis:
+  mapper-locations: classpath:mapper/*.xml  #注意：一定要对应mapper映射xml文件的所在路径
+  type-aliases-package: com.example.usedmallserver.entity  # 注意：对应实体类的路径
